@@ -1,0 +1,229 @@
+<mvc:View controllerName="zjblesso02.EmptyApplication.controller.Worklist" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic" xmlns:f="sap.f" xmlns:l="sap.ui.layout" xmlns:footerbar="sap.ushell.ui.footerbar">
+	<f:DynamicPage class="sapUiNoContentPadding">
+		<f:header height="100%">
+			<!--<f:DynamicPageHeader pinnable="false">-->
+			<!--	<Text text="Empty application"></Text>-->
+			<!--</f:DynamicPageHeader>-->
+		</f:header>
+		<f:content>
+			<IconTabBar id="idIconTabBarStretchContent" stretchContentHeight="true" backgroundDesign="Transparent" applyContentPadding="false"
+				expanded="true" class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter text="Products" key="products">
+						<ScrollContainer height="100%" width="100%" horizontal="false" vertical="true">
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/><Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							<Text
+								text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>
+							
+							 </ScrollContainer></IconTabFilter>
+							<IconTabFilter text="Attachments" key="attachments">
+								<Text text="Attachments go here ..."/>
+							</IconTabFilter>
+							<IconTabFilter text="Notes" key="notes">
+								<Text text="Notes go here ..."/>
+							</IconTabFilter>
+							<IconTabFilter text="People" key="people">
+								<Text text="People content goes here ..."/>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+					<!--<IconTabBar id="itemsFilterIconTabBar" headerBackgroundDesign="Transparent" stretchContentHeight="true" applyContentPadding="false"-->
+					<!--	select="onSelectIconTabBar" headerMode="Inline" expandable="true" expanded="true" class="heightContent">-->
+					<!--	<items class="heightContent">-->
+					<!--		<IconTabFilter id="DetailsIconTabBar" class="heightContent" key="Details" icon="sap-icon://accelerated" text="Tab1">-->
+					<!--			<ScrollContainer>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/><Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Button text="Custom action" class="sapUiSmallMarginBottom" press=".onInitialFocusOnCustomAction" width="250px"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--				<Text-->
+					<!--					text="sapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottomsapUiSmallMarginBottom"/>-->
+					<!--	</detailPages>-->
+					<!--	<masterPages>-->
+					<!--	</masterPages>-->
+					<!--</SplitApp>-->
+					<!--			</ScrollContainer>-->
+					<!--		</IconTabFilter>-->
+					<!--		<IconTabFilter id="DetailsIconTabBar2" key="Details" icon="sap-icon://hide" text="Tab2">-->
+					<!--			<Text text="Content of Page 2"/>-->
+					<!--		</IconTabFilter>-->
+					<!--	</items>-->
+					<!--</IconTabBar>-->
+				</f:content>
+			</f:DynamicPage>
+			<!--<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false">-->
+			<!--	<semantic:titleHeading>-->
+			<!--		<Title text="{i18n>worklistTitle}"/>-->
+			<!--	</semantic:titleHeading>-->
+			<!--	<semantic:content>-->
+			<!--		<Table id="table" width="auto" items="{ path: '/MaterialID', sorter: { path: 'ID', descending: false } }"-->
+			<!--			noDataText="{worklistView>/tableNoDataText}" busyIndicatorDelay="{worklistView>/tableBusyDelay}" growing="true" growingScrollToLoad="true"-->
+			<!--			updateFinished="onUpdateFinished">-->
+			<!--			<headerToolbar>-->
+			<!--				<Toolbar>-->
+			<!--					<Title id="tableHeader" text="{worklistView>/worklistTableTitle}"/>-->
+			<!--					<ToolbarSpacer/>-->
+			<!--					<SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" search="onSearch" width="auto"></SearchField>-->
+			<!--				</Toolbar>-->
+			<!--			</headerToolbar>-->
+			<!--			<columns>-->
+			<!--				<Column id="nameColumn">-->
+			<!--					<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>-->
+			<!--				</Column>-->
+			<!--				<Column id="unitNumberColumn" hAlign="End">-->
+			<!--					<Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>-->
+			<!--				</Column>-->
+			<!--			</columns>-->
+			<!--			<items>-->
+			<!--				<ColumnListItem type="Navigation" press="onPress">-->
+			<!--					<cells>-->
+			<!--						<ObjectIdentifier title="{ID}"/>-->
+			<!--						<ObjectNumber unit="{ID}"/>-->
+			<!--					</cells>-->
+			<!--				</ColumnListItem>-->
+			<!--			</items>-->
+			<!--		</Table>-->
+			<!--	</semantic:content>-->
+			<!--	<semantic:sendEmailAction>-->
+			<!--		<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>-->
+			<!--	</semantic:sendEmailAction>-->
+			<!--	<semantic:shareInJamAction>-->
+			<!--		<semantic:ShareInJamAction id="shareInJam" visible="{FLP>/isShareInJamActive}" press="onShareInJamPress"/>-->
+			<!--	</semantic:shareInJamAction>-->
+			<!--	<semantic:saveAsTileAction>-->
+			<!--		<footerbar:AddBookmarkButton id="shareTile" title="{worklistView>/saveAsTileTitle}"/>-->
+			<!--	</semantic:saveAsTileAction>-->
+			<!--</semantic:SemanticPage>-->
+		</mvc:View>

@@ -1,0 +1,49 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout" class="sapUiSizeCompact"
+	xmlns:f="sap.ui.layout.form" xmlns:t="sap.ui.table" xmlns:u="sap.ui.unified" xmlns:rich="sap.ui.richtexteditor">
+	<Dialog title="Загрузка кандидата" class="sapUiNoContentPadding sapUiSizeCompact" contentWidth="30rem" afterClose="onDialogAfterClose"
+		id="UpdoadResume">
+		<content>
+			<VBox class="sapUiTinyMargin">
+				<FlexBox justifyContent="SpaceBetween">
+					<Text text="Выберите источник резюме" width="8rem"/>
+					<Select width="20rem" forceSelection="false" selectedKey="{data>/selectedSource}" id="uploadResumeSource"
+						items="{ path:'help>/resumeSource'}">
+						<core:Item key="{help>/Value}" text="{help>/Text}"/>
+					</Select>
+				</FlexBox>
+				<FlexBox justifyContent="SpaceBetween" visible="{= ${data>/selectedSource} === '0008'}">
+					<Text text="Комментарий" width="7rem"/>
+					<TextArea width="20rem" cols="999" rows="3" value="{data>/sourceComment}"/>
+				</FlexBox>
+				<VBox visible="{= ${data>/selectedSource} !== '0001'}" class="sapUiTinyMargin">
+					<RadioButtonGroup columns="2" selectIndex="{data>/resumeModel}">
+						<buttons>
+							<RadioButton text="Загрузка из файла"/>
+							<RadioButton text="Загрузка из текста"/>
+						</buttons>
+					</RadioButtonGroup>
+					<FlexBox justifyContent="SpaceBetween" visible="{= ${data>/resumeModel} === 0}">
+						<Text text="Выберите файл для загрузки" width="7rem"/>
+						<u:FileUploader id="ResumeUploader" name="myFileUpload" uploadChange="false" useMultipart="false" sendXHR="true"
+							uploadComplete="onResumeUploadComplete" uploadURL="{data>/uploadResumeURL}"></u:FileUploader>
+					</FlexBox>
+					<rich:RichTextEditor width="100%" useLegacyTheme="false" showGroupFontStyle="false" value="{data>/uploadResumeText}"
+						visible="{= ${data>/resumeModel} === 1}" showGroupClipboard="true" showGroupTextAlign="false" showGroupStructure="false"
+						showGroupFont="false" showGroupInsert="false" showGroupLink="false" showGroupUndo="false"/>
+					<FlexBox justifyContent="End">
+						<Button text="Загрузить" press="onUploadResume" class="transpBtn"/>
+					</FlexBox>
+				</VBox>
+				<VBox visible="{= ${data>/selectedSource} ==='0001'}" class="sapUiTinyMargin">
+					<Text text="Для источника <Шаг в будущее> необходимо воспользоваться фильтрами поиска кандидов" width="7rem"/>
+					<FlexBox justifyContent="End">
+						<Button press="onGoToSearchPress" text="Перейти к поиску" class="transpBtn"/>
+					</FlexBox>
+				</VBox>
+			</VBox>
+		</content>
+		<endButton>
+			<Button text="Отмена" press="onUploadResumeCancel" type="Reject"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

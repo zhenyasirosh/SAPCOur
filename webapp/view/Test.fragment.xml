@@ -1,0 +1,54 @@
+<core:FragmentDefinition controllerName="zjblesso02.EmptyApplication.controller.Worklist" xmlns:layout="sap.ui.layout" xmlns="sap.m"
+	xmlns:app="sap.ui.core.CustomData/1" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout"
+	xmlns:smartForm="sap.ui.comp.smartform" xmlns:smartField="sap.ui.comp.smartfield"
+	xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Dialog id="mainPage"
+		title="{= (${worklistView>/CreateNewWorklog} === true) ? (${i18n>ttlAddWorkLog}) : (${i18n>ttlEditWorkLog}) } {i18n>tSpent}: {WorkLogDurationText}"
+		contentWidth="430px" afterOpen="_setTextAreaFocusWorkLog" contentHeight="380px" minWidth="430px" minHeight="380px" class="sapUiSizeCompact" resizable="true" draggable="true"
+		busy="{objectView>/busy}" busyIndicatorDelay="{objectView>/delay}">
+		<Page showHeader="false">
+			<content>
+				<!--<l:VerticalLayout width="100%">-->
+				<Label text="{i18n>tWorkLogDescription}" class="paddingsInPopUP sapUiSmallMarginLeft sapUiSmallMarginTop sapUiSmallContentPadding"/>
+				<TextArea id="WorkLogDescriptionTextArea" class="paddingsInPopUP sapUiSmallMarginLeft sapUiSmallMarginTop sapUiSmallContentPadding"
+					placeholder="{i18n>tEnterWorkLogDescription}" value="{WorkLogDescription}" width="100%" height="30%"/>
+				
+				<VBox height="50px">
+					<HBox height="30%" direction="Column" class="paddingsInPopUP sapUiSmallMarginLeft sapUiSmallMarginTop sapUiSmallContentPadding"></HBox>
+					<HBox height="100%" width="100%" justifyContent="SpaceAround" class="paddingsInPopUP sapUiSmallMarginTop">
+						<VBox width="33.3%">
+							<Text text="{i18n>tDays}:"/>
+							<StepInput value="{SpentDays}" min="0" step="0.25" displayValuePrecision="2" textAlign="Center" change=".onChangeStepInputSpentDays"/>
+						</VBox>
+						<VBox width="33.3%" class="sapUiSmallMarginBeginEnd">
+							<Text text="{i18n>tHours}:"/>
+							<StepInput value="{SpentHours}" min="0" step="0.5" displayValuePrecision="2" textAlign="Center" change=".onChangeStepInputSpentHours"/>
+						</VBox>
+						<VBox width="33.3%">
+							<Text text="{i18n>tMinutes}:"/>
+							<StepInput value="{SpentMinutes}" min="0" step="15" change=".onChangeStepInputSpentMinutes" textAlign="Center"/>
+						</VBox>
+					</HBox>
+					<HBox height="100%" width="100%" class="sapUiSmallMarginTop sapUiSmallContentPadding">
+						<VBox width="100%" class="paddingsInPopUP sapUiSmallMarginTop sapUiSmallContentPadding">
+							<Text text="{i18n>tWorkLogDateTime}"/>
+							<!--<HBox width="100%" alignItems="Center">-->
+							<smartField:SmartField value="{WorkLogDateTimeBegin}"/>
+							<!--</HBox>-->
+						</VBox>
+					</HBox>
+				</VBox>
+				<!--</HBox>-->
+				<!--</l:VerticalLayout>-->
+			</content>
+			<footer>
+				<Toolbar id="footerToolbar">
+					<ToolbarSpacer id="footerToolbarSpacer"/>
+					<Button id="createEditProductSaveButton" text="{i18n>tSave}" press="onPressSaveWorklog" type="Emphasized"
+						enabled="{worklistView&gt;/SaveEnabled}"/>
+					<Button id="createEditProductCancelButton" text="{i18n>tCancel}" press="onPressDialogCancelWorkLog" type="Reject"/>
+				</Toolbar>
+			</footer>
+		</Page>
+	</Dialog>
+</core:FragmentDefinition>
